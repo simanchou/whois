@@ -1,4 +1,4 @@
-module github.com/likexian/whois
+module github.com/simanchou/whois
 
 go 1.18
 

@@ -19,14 +19,14 @@ Or you can do development by using this golang module as below.
 ## Installation
 
 ```shell
-go get -u github.com/likexian/whois
+go get -u github.com/simanchou/whois
 ```
 
 ## Importing
 
 ```go
 import (
-    "github.com/likexian/whois"
+    "github.com/simanchou/whois"
 )
 ```
 
@@ -39,7 +39,7 @@ Visit the docs on [GoDoc](https://pkg.go.dev/github.com/likexian/whois)
 ### whois query for domain
 
 ```go
-result, err := whois.Whois("likexian.com")
+result, err := whois.Whois("github.com")
 if err == nil {
     fmt.Println(result)
 }
