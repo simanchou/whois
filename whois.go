@@ -227,6 +227,9 @@ func getServer(data string) (string, string) {
 			start += len(token)
 			end := strings.Index(data[start:], "\n")
 			server := strings.TrimSpace(data[start : start+end])
+			// fix for name.com
+			server = strings.TrimPrefix(server, "https:")
+			server = strings.TrimPrefix(server, "http:")
 			server = strings.TrimPrefix(server, "whois:")
 			server = strings.TrimPrefix(server, "rwhois:")
 			server = strings.Trim(server, "/")
